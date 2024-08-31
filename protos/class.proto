@@ -1,0 +1,13 @@
+syntax = "proto3";
+package example;
+import "google/protobuf/timestamp.proto";
+
+message Class {
+
+  int64 id = 1;
+  string name = 2;
+  int32 course_unit_id = 3;
+
+  // Last updated timestamp with timezone information
+  google.protobuf.Timestamp last_updated = 4;
+}
